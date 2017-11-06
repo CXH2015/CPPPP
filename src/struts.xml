@@ -12,6 +12,10 @@
 		<result>loginSuccess.jsp</result>
 		<result name="input">login.jsp</result>
 	</action>
+	<action name="myConvert" class="dps.action.ConvertAction">
+	<result>output.jsp</result>
+	<result name="input">input.jsp</result>
+	</action>
 	</package>
 
 </struts>

@@ -20,6 +20,7 @@ ${tip }
 </tr>
 <tr>
 <td colspan="2"><input type="submit" value="登录"></td>
+<td> <a href="regist.jsp">还没注册？</a></td>
 </tr>
 </table>
 </form></center>
