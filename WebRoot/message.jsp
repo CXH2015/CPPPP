@@ -8,13 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<center>
-<h1>注册成功<br>
-坐标1:<s:property value="myPoint1"/><br>
-坐标2:<s:property value="myPoint2"/><br>
-用户名:<s:property value="age"/><br>
-生日:<s:property value="birthday"/><br>
-</h1>
-</center>
+<s:fielderror/>
+<form action="${pageContext.request.contextPath}/hello/test/user_update.action" method="post">
+用户名:<input type="text" name="username"/>不能为空<br/>
+手机号:<input type="text" name="phone"/>不能为空，并且要符合手机号的格式1,3,5,8,后面是九个数字<br/>
+<input type="submit" value="提交"/>
+${message }
+</form>
 </body>
 </html>

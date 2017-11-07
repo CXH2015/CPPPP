@@ -11,7 +11,8 @@
 <center>
 <font color="red">坐标以逗号分隔</font>
 <s:form action="myConvert">
-<s:textfield label="坐标" name="myPoint"/>
+<s:textfield label="坐标1" name="myPoint1"/>
+<s:textfield label="坐标2" name="myPoint2"/>
 <s:textfield label="年龄" name="age"/>
 <s:textfield label="生日" name="birthday"/>
 <s:submit value="提交"/>
