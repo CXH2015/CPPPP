@@ -12,7 +12,7 @@
 <h1>注册成功<br>
 坐标1:<s:property value="myPoint1"/><br>
 坐标2:<s:property value="myPoint2"/><br>
-用户名:<s:property value="age"/><br>
+年龄:<s:property value="age"/><br>
 生日:<s:property value="birthday"/><br>
 </h1>
 </center>
