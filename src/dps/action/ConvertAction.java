@@ -20,10 +20,10 @@ public class ConvertAction extends ActionSupport {
 	public void setMyPoint1(MyPoint myPoint) {
 		this.myPoint1 = myPoint;
 	}
-	public int getAge1() {
+	public int getAge() {
 		return age;
 	}
-	public void setAge1(int age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 	public Date getBirthday() {
