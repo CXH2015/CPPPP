@@ -8,22 +8,13 @@
 	<constant name="struts.i18n.encoding" value="UTF-8"/>
 	<constant name="struts.custom.i18n.resources" value="msg"/>
 	<package name="myPackage" extends="struts-default">
-	<interceptors>
-	<interceptor name="authInter" class="dps.interceptor.AuthInterceptor"></interceptor>
-	</interceptors>
-	<action name="login" class="dps.action.UserAction" method="login">
+	<action name="login" class="dps.action.UserAction">
 		<result>loginSuccess.jsp</result>
 		<result name="input">login.jsp</result>
 	</action>
 	<action name="myConvert" class="dps.action.ConvertAction">
 	<result>output.jsp</result>
 	<result name="input">input.jsp</result>
-	</action>
-	<action name="secret" class="dsp.interceptor.UserAction" method="secret">
-	<interceptor-ref name="authInter"/>
-	<interceptor-ref name="defaultStack"/>
-	<result name="success">WEB-INF/page/secret.jsp</result>
-	<result name="input">/login.jsp</result>
 	</action>
 	</package>
 
