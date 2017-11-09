@@ -22,7 +22,11 @@ public class UserAction extends ActionSupport {
 	public String execute() throws Exception{
 		String strReturn = INPUT;
 		if(this.username.equals("abc")&&this.password.equals("123"))
+		{
+			ActionContext.getContext().getSession().put("username", username);
 			strReturn=SUCCESS;
+		}
+			
 		else
 			ActionContext.getContext().getSession().put("tip","登录失败");
 		return strReturn;
