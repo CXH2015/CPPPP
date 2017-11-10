@@ -1,20 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>注册成功</title>
+<title>机密信息页面</title>
 </head>
 <body>
-<center>
-<h1>注册成功<br>
-坐标1:<s:property value="myPoint1"/><br>
-坐标2:<s:property value="myPoint2"/><br>
-年龄:<s:property value="age"/><br>
-生日:<s:property value="birthday"/><br>
-</h1>
-</center>
+<h1>这是机密信息</h1>
 </body>
 </html>

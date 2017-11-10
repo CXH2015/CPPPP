@@ -18,13 +18,26 @@ public class UserAction extends ActionSupport {
 		this.password = password;
 	}
 	private String password;
-	@Override
-	public String execute() throws Exception{
+	
+	public String login() throws Exception{
 		String strReturn = INPUT;
 		if(this.username.equals("abc")&&this.password.equals("123"))
+		{
+			ActionContext.getContext().getSession().put("username",username);
 			strReturn=SUCCESS;
+		}
 		else
 			ActionContext.getContext().getSession().put("tip","登录失败");
+		return strReturn;
+	}
+	public String regist() throws Exception {
+		String strReturn = SUCCESS;
+		ActionContext.getContext().getSession().put("tip","注册成功");
+		return strReturn;
+	}
+	public String secret() throws Exception{
+		String strReturn=SUCCESS;
+		System.out.println("执行secret操作");
 		return strReturn;
 	}
 }
