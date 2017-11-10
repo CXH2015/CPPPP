@@ -12,7 +12,8 @@ ${tip }
 <form action="login.action" method="post">
 <table>
 <tr> <td>用户ID</td>
-<td><input type="text" name="username"></td>
+<td><input type="text" name="username">
+</td>
 </tr>
 <tr>
 <td>密码</td>
